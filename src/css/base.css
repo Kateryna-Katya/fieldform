@@ -16,9 +16,9 @@ h2{
     text-align: center;
     color: #6d7472;
     border-bottom: 1px solid #b35554;
-      padding: 8px 16px;
+      padding: 80px 16px 8px;
       width: 100%;
-      margin-bottom: 80px;
+
 }
 h3{
   font-family: "Literata", sans-serif;
@@ -29,4 +29,9 @@ h3{
     text-align: center;
     color: #6d7472;
     margin-bottom: 48px;
+}
+@media only screen and (min-width: 1440px) {
+h3{
+  font-size: 56px;
+}
 }
