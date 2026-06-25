@@ -308,3 +308,75 @@ width: 479px;
 font-size: 16px;
 }  
 }
+/* Reviews */
+.reviews-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.reviews-item{
+border: 1px solid #d9dedc;
+    border-radius: 8px;
+    padding: 24px 32px;
+    width: 333px;
+    height: 130px;
+box-shadow: 0 2px 2px 0 rgba(109, 116, 114, 0.3);
+    background: #d9dedc;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.reviews-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.author{
+font-size: 12px;
+}
+.reviews-text{
+color: #6d7472;
+text-align: left;
+}
+@media only screen and (min-width: 1440px) {
+.reviews-list{
+flex-direction: row;
+justify-content: center;
+}   
+}
+/* Player Benefits */
+.benefits-section{
+background: #f1f1f1;
+}
+.benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.benefits-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.benefits-item img{
+width: 80px;
+    height: 80px;
+}
+.benefits-item p{
+color: #396272;
+}
+@media only screen and (min-width: 1440px) {
+.benefits-list{
+flex-direction: row;
+justify-content: center;
+gap: 64px;
+}
+.benefits-item{
+width: 150px;
+flex-direction: column;
+}
+.benefits-item img{
+width: 120px;
+    height: 120px;
+}   
+}
