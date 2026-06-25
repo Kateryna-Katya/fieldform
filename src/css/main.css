@@ -380,3 +380,135 @@ width: 120px;
     height: 120px;
 }   
 }
+/* FAQ */
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    margin: 0 auto;
+    gap: 12px;
+
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+
+}
+
+
+.faq-acc-el-title {
+    margin-bottom: 0;
+}
+
+.faq-acc-el-trigger {
+    border: none;
+    background: inherit;
+    width: 100%;
+font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #6d7472;
+    padding: 8px;
+border-bottom: 1px solid #d9dedc;
+    margin-bottom: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: transform 0.3s ease;
+    border: none;
+width: 24px;
+height: 24px;
+background-color: #396272;
+border-radius: 999px;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el.open .faq-acc-arr {
+    transform: rotate(180deg);
+    background-color: #8fa99a;
+}
+
+.faq-acc-el-descr-frame {
+    background: inherit;
+    overflow: hidden;
+    max-height: 0;
+    text-align: left;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+    opacity: 1;
+    border: none;
+    background: none;
+    text-align: left;
+    padding: 8px 24px 8px 8px;
+    max-height: 500px;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .faq-acc {
+        width: 790px;
+        gap: 32px;
+    }
+
+    .faq-acc-el {
+        width: 790px;
+    }
+
+    .faq-acc-el-trigger {
+        padding: 12px 8px;
+        width: 790px;
+    }
+    .mob{
+        display: none;
+    }
+}
+/* Contact */
+.contact-section{
+background-color: #f1f1f1;
+height: 794px;
+background-image: url("/img/contact/mob.png");
+background-repeat: no-repeat;
+background-position: bottom center;
+background-size: 100% 298px;
+}
+.contact-link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    font-size: 24px;
+}
+@media only screen and (min-width: 1440px) {
+.contact-section {
+        background-color: #f1f1f1;
+height: 1048px;
+        background-image: url("/img/contact/desk.png");
+        background-size: 100% 600px;
+    }
+}
