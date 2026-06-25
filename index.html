@@ -16,10 +16,83 @@
     <script type="module" crossorigin src="/fieldform/index.js"></script>
     <link rel="modulepreload" crossorigin href="/fieldform/assets/vendor-C_lmVHsc.js">
     <link rel="stylesheet" crossorigin href="/fieldform/assets/vendor-vL0Q9Dr-.css">
-    <link rel="stylesheet" crossorigin href="/fieldform/assets/styles-BbyPr2KF.css">
+    <link rel="stylesheet" crossorigin href="/fieldform/assets/styles-CT722uYe.css">
   </head>
   <body>
-    
+    <header class="header" id="site-header">
+    <div class="header-container container">
+        <a class="header-logo" href="./#home">
+            <img src="data:image/png;base64,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" alt="logo" loading="lazy">
+        </a>
+        <button type="button" class="menu-button" aria-label="menu toggle">
+            <span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 8H17M6 16H17M6 12H17" stroke="#2E3231" stroke-linecap="square" />
+</svg>
+            </span>
+        </button>
+
+        <nav class="nav ">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="links" href="./#home">Home</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#about">About the Game</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#how">How To Play</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#features">Features</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#location">Locations</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#reviews">Reviews</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#benefits">Player Benefits</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#faq">FAQ</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+    <ul class="menu-list">
+        <li class="menu-item"><a class="menu-list-item" href="./#home">Home</a></li>
+        <li class="menu-item"><a class="menu-list-item" href="./#about">About the Game</a></li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#how">How To Play</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#features">Features</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#location">Locations</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#reviews">Reviews</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#benefits">Player Benefits</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#faq">FAQ</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#contact">Contact</a>
+        </li>
+    </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
